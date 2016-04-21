@@ -1,0 +1,464 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#143"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <ScrollView android:id="@+id/fullscreen_content" style="?metaButtonBarStyle"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#143"
+            android:stretchColumns="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="CGP Calculator"
+                    android:gravity="center"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal|top" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/sub"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="#ff0000"
+                        android:textColor="#ffffff"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:text="Sub"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/mid1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="#ff0000"
+                        android:textColor="#ffffff"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:text="Mid1"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/mid2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="#ff0000"
+                        android:textColor="#ffffff"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:text="Mid2"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/asg"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="#ff0000"
+                        android:textColor="#ffffff"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:text="Asg"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/sem"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="#ff0000"
+                        android:textColor="#ffffff"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:text="Sem"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/java"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="1.3"
+                        android:ems="1"
+                        android:text="Java"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/javamid1"
+                        android:layout_column="2"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/javamid2"
+                        android:layout_column="3" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/javaasg"
+                        android:layout_column="4" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/javasem"
+                        android:layout_column="5" />
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/es"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="1.3"
+                        android:ems="1"
+                        android:text="ES"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/esmid1"
+                        android:layout_column="2"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/esmid2"
+                        android:layout_column="3" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/esasg"
+                        android:layout_column="4" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/essem"
+                        android:layout_column="5" />
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/co"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="1.3"
+                        android:ems="1"
+                        android:text="CO"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/comid1"
+                        android:layout_column="2"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/comid2"
+                        android:layout_column="3" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/coasg"
+                        android:layout_column="4" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/cosem"
+                        android:layout_column="5" />
+
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/os"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="1.3"
+                        android:ems="1"
+                        android:text="OS"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/osmid1"
+                        android:layout_column="2"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/osmid2"
+                        android:layout_column="3" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/osasg"
+                        android:layout_column="4" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/ossem"
+                        android:layout_column="5" />
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/se"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="1.3"
+                        android:ems="1"
+                        android:text="SE"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/semid1"
+                        android:layout_column="2"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/semid2"
+                        android:layout_column="3" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/seasg"
+                        android:layout_column="4" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/sesem"
+                        android:layout_column="5" />
+
+
+                </TableRow>
+
+
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/javalab"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="2"
+                        android:ems="1"
+                        android:text="Java Lab"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/javalabin"
+                        android:layout_column="2"/>
+
+                    <TextView
+                        android:id="@+id/oslab"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="2"
+                        android:ems="1"
+                        android:text="OS Lab"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/oslabin"
+                        android:layout_column="3" />
+
+                    <TextView
+                        android:id="@+id/cpplab"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="2"
+                        android:ems="1"
+                        android:text="CEW"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_column="1"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"
+                        android:ems="1"
+                        android:id="@+id/cewlabin"
+                        android:layout_column="4" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:id="@+id/result"
+                    android:layout_column="1"
+                    android:layout_span="6"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calculate"
+                        android:id="@+id/cal"
+                        android:layout_column="1"
+                        android:layout_span="1" />
+
+
+
+                </TableRow>
+
+
+
+
+        </TableLayout>
+    </ScrollView>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!--<Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/dummy_button" /-->
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
